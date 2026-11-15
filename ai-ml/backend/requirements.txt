@@ -1,0 +1,6 @@
+Flask
+flask-cors
+pypdf
+Werkzeug
+gunicorn
+mysql-connector-python

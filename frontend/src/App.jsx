@@ -12,7 +12,6 @@ import Profile from "./pages/profile";
 import Login from "./pages/Login";
 
 import "./App.css";
-
 function App() {
 
   const [isLoggedIn, setIsLoggedIn] = useState(false);
