@@ -8,7 +8,7 @@ import Dashboard from "./pages/Dashboard";
 import Resume from "./pages/Resume";
 import Career from "./pages/Career";
 import Roadmap from "./pages/Roadmap";
-import Profile from "./pages/Profile";
+import Profile from "./pages/profile";
 import Login from "./pages/Login";
 
 import "./App.css";
