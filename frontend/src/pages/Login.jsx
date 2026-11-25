@@ -9,8 +9,7 @@ import {
   User
 } from "lucide-react";
 
-const API_URL = "http://127.0.0.1:5000";
-
+const API_URL = "https://careerai-2-8v0y.onrender.com";
 function Login({ onLogin }) {
 
   const [isRegister, setIsRegister] = useState(false);
