@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import {
   User,
@@ -16,6 +15,8 @@ import {
   Target,
   BookOpen
 } from "lucide-react";
+
+const API_URL = "https://careerai-2-8v0y.onrender.com";
 
 function Profile({ onProfileNameChange }) {
 
@@ -44,7 +45,7 @@ function Profile({ onProfileNameChange }) {
       try {
 
         const response = await fetch(
-          "http://127.0.0.1:5000/profile"
+          `${API_URL}/profile`
         );
 
         if (!response.ok) {
@@ -165,7 +166,7 @@ function Profile({ onProfileNameChange }) {
     try {
 
       const response = await fetch(
-        "http://127.0.0.1:5000/profile",
+        `${API_URL}/profile`,
         {
           method: "POST",
 
