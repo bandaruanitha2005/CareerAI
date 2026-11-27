@@ -7,7 +7,23 @@ from werkzeug.security import generate_password_hash, check_password_hash
 import re
 
 app = Flask(__name__)
-CORS(app)
+from flask import Flask, jsonify, request
+from flask_cors import CORS
+
+app = Flask(__name__)
+
+CORS(
+    app,
+    resources={
+        r"/*": {
+            "origins": [
+                "https://career-ai-murex-six.vercel.app"
+            ]
+        }
+    },
+    methods=["GET", "POST", "OPTIONS"],
+    allow_headers=["Content-Type", "Authorization"]
+)
 
 
 # =====================================
